@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  width: 400px;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.login-container h2 {
+  text-align: start;
+  margin-bottom: 20px;
+}
+.login-container label {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.login-container input {
+  height: 30px;
+  padding: 10px 0;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #aaa;
+  font-size: 15px;
+  font-weight: 500;
+  background: none;
+}
+.password-container {
+  border-bottom: 2px solid #aaa;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+.mail-container input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+input::placeholder {
+  color: #aaa;
+  font-weight: 300;
+  font-size: 13px;
+}
+.password-container input {
+  outline: none;
+  border: 0;
+  width: 280px;
+}
+.password-container .eye-icon {
+  color: #747474;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login-container #loginbtn {
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: rgb(0, 183, 255);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.login-container #loginbtn:hover {
+  background-color: rgb(0, 167, 233);
+}
+.login-container strong {
+  color: orange;
+  cursor: pointer;
+}
+.login-container .social-login img {
+  width: 20px;
+  height: 20px;
+}
+.login-container .social-login {
+  display: flex;
+  margin: 20px 0;
+  padding-top: 10px;
+}
+.login-container .social-login button {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 2px solid #aaa;
+  cursor: pointer;
+}
+.social-login #googlebtn {
+  margin-right: 20px;
+}
