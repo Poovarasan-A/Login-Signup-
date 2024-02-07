@@ -7,37 +7,100 @@
     <title>Login Form</title>
   </head>
   <body>
-    <div class="login-container">
-      <h2>Login to your account!</h2>
-      <label for="">Email</label>
-      <div class="mail-container">
-        <input type="email" placeholder="Enter your mail address" required />
+    <div class="main-container">
+      <div class="wlcmNote">
+        <h1>Welcome to Our Page</h1>
+        <p>Login to get started with our product</p>
+        <button class="getstart">Get Started</button>
       </div>
-      <label for="">Password</label>
-      <div class="password-container">
+
+      <!-------------------Login page --------------------->
+      <div class="login-container">
+        <h2>Login to your account!</h2>
+        <label for="">Email</label>
+        <div class="mail-container">
+          <input type="email" placeholder="Enter your Mail Id" required />
+        </div>
+        <label for="">Password</label>
+        <div class="password-container">
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter your Password"
+            required
+          />
+          <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
+        </div>
+        <button id="loginbtn">Login</button>
+        <small
+          >Don't have an account?<strong>
+            <a href="#" class=".signupToggle" onclick="signtoggle()"
+              >Sign up</a
+            ></strong
+          ></small
+        >
+        <p class="or">- OR -</p>
+        <div class="social-login">
+          <button id="googlebtn">
+            <img src="./assets/search.png" />&nbsp;&nbsp;<a
+              href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1173727879%3A1707143875056297&theme=glif"
+              >Google</a
+            >
+          </button>
+          <button id="fbbtn">
+            <img src="./assets/facebook.png" alt="" />&nbsp;&nbsp;<a
+              href="https://www.facebook.com/"
+              >Facebook</a
+            >
+          </button>
+        </div>
+      </div>
+      <!-- -----------------------------Sign up------------------------------- -->
+      <div class="signup-container">
+        <h2>Create account</h2>
+        <label>Username</label>
         <input
-          id="password"
-          type="password"
-          placeholder="Enter your password"
-          required
+          type="text"
+          placeholder="Enter your Full Name"
+          class="fullname"
         />
-        <ion-icon name="eye-outline" class="eye-icon"></ion-icon>
-      </div>
-      <button id="loginbtn">Login</button>
-      <small>Don't have an account?<strong> Sign up</strong></small>
-      <div class="social-login">
-        <button id="googlebtn">
-          <img src="./assets/search.png" />&nbsp;&nbsp;<a
-            href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1173727879%3A1707143875056297&theme=glif"
-            >Google</a
-          >
-        </button>
-        <button id="fbbtn">
-          <img src="./assets/facebook.png" alt="" />&nbsp;&nbsp;<a
-            href="https://www.facebook.com/"
-            >Facebook</a
-          >
-        </button>
+        <label for="">Email</label>
+        <div class="mail-container">
+          <input type="email" placeholder="Enter your Mail Id" required />
+        </div>
+        <label for="">Password</label>
+        <div class="password-container">
+          <input
+            id="password2"
+            type="password"
+            placeholder="Enter your Password"
+            required
+          />
+          <ion-icon name="eye-outline" class="eye-icon eye-icon2"></ion-icon>
+        </div>
+        <button id="signupbtn">Create Account</button>
+        <small
+          >Already have an account?<strong>
+            <a href="#" class=".loginToggle" onclick="logtoggle()"
+              >Login</a
+            ></strong
+          ></small
+        >
+        <p class="or">- OR -</p>
+        <div class="social-login">
+          <button id="googlebtn">
+            <img src="./assets/search.png" />&nbsp;&nbsp;<a
+              href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1173727879%3A1707143875056297&theme=glif"
+              >Google</a
+            >
+          </button>
+          <button id="fbbtn">
+            <img src="./assets/facebook.png" alt="" />&nbsp;&nbsp;<a
+              href="https://www.facebook.com/"
+              >Facebook</a
+            >
+          </button>
+        </div>
       </div>
     </div>
     <script
